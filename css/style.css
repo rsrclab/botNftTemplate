@@ -135,6 +135,14 @@ p {
     padding: 15px;
   }
 }
+.left-img img {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 57px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .left .item {
   height: 14%;
 }
@@ -182,12 +190,6 @@ p {
 }
 .title span strong {
   font-weight: bold;
-}
-
-.input {
-  width: 30%;
-  padding: 10px;
-  font-size: 16px;
 }
 
 .circles {
@@ -274,6 +276,12 @@ p {
   width: 100%;
   height: 100%;
   background-color: white;
+}
+.sectiontwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: stretch;
+     object-fit: stretch;
 }
 
 span {
