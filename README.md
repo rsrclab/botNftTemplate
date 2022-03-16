@@ -1,2 +1,2 @@
 # botNftTemplate
-botNftTemplate
+tymurrenhach@gmail.com
