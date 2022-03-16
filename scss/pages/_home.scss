@@ -1,0 +1,186 @@
+// Style for homepage components goes here.
+.main{
+  width: 100%;
+  height: 100%;
+
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.panel{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  @include mq('phablet', max) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+}
+.left{
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  box-sizing: border-box;
+  @include mq('phablet', max) {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px;
+  }
+  .item{
+    height: 14%;
+    &:nth-of-type(2){
+      height: 30%;
+    }
+  }
+  .spac-items{
+    &.one{
+      max-width: 500px;
+    }
+    &.two{
+      max-width: 600px;
+    }
+  }
+}
+.title{
+  span{
+    font-size: 70px;
+    @include mq('desktop-wide', max) {
+      font-size: 60px;
+    }
+    @include mq('desktop-small', max) {
+      font-size: 55px;
+    }
+    @include mq('tablet-wide', max) {
+      font-size: 48px;
+    }
+    @include mq('tablet', max) {
+      font-size: 36px;
+    }
+    @include mq('tablet', max) {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    strong{
+      font-weight: bold;
+    }
+  }
+}
+.input{
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+}
+.circles{
+  display: flex;
+  flex-direction: row;
+  div{
+    width: 54px;
+    height: 54px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.spac-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.check{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  input{
+    width: 60px;
+    height: 60px;
+    @include mq('tablet', max) {
+      width: 40px;
+      height: 40px;
+    }
+  
+
+  }
+}
+.right{
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+  @include mq('phablet', max) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+.sectiontwo{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+
+span{
+  font-size: 32px;
+  color: white;
+  @include mq('desktop-wide', max) {
+    font-size: 28px;
+  }
+  @include mq('desktop-small', max) {
+    font-size: 24px;
+  }
+  @include mq('tablet-wide', max) {
+    font-size: 20px;
+  }
+  @include mq('tablet', max) {
+    font-size: 18px;
+  }
+
+}
+.footer{
+  display: flex;
+  max-width: 1920;
+  margin:  0 auto; 
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.copyright{
+  margin-top: -110px;
+  @include mq('phablet', max) {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  span{
+    font-size: 20px;
+    @include mq('desktop-wide', max) {
+      font-size: 20px;
+    }
+    @include mq('desktop-small', max) {
+      font-size: 18px;
+    }
+    @include mq('tablet-wide', max) {
+      font-size: 16px;
+    }
+    @include mq('tablet', max) {
+      font-size: 14px;
+    }
+  
+  }
+}

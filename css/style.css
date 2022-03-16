@@ -1,0 +1,348 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#2c3347, #191822);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+span {
+  color: white;
+  font-size: 32px;
+}
+@media only screen and (max-width: 1439px) {
+  span {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  span {
+    font-size: 18px;
+  }
+}
+/**
+ * Basic typography style for copy text
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+.heading-1 {
+  font-size: 120px;
+}
+@media only screen and (max-width: 991px) {
+  h1,
+.heading-1 {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1,
+.heading-1 {
+    font-size: 64px;
+  }
+}
+
+h2,
+.heading-2 {
+  font-size: 36px;
+}
+@media only screen and (max-width: 767px) {
+  h2,
+.heading-2 {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 559px) {
+  .panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+.left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media only screen and (max-width: 559px) {
+  .left {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px;
+  }
+}
+.left .item {
+  height: 14%;
+}
+.left .item:nth-of-type(2) {
+  height: 30%;
+}
+.left .spac-items.one {
+  max-width: 500px;
+}
+.left .spac-items.two {
+  max-width: 600px;
+}
+
+.title span {
+  font-size: 70px;
+}
+@media only screen and (max-width: 1439px) {
+  .title span {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .title span {
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .title span {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title span {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title span {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+.title span strong {
+  font-weight: bold;
+}
+
+.input {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.circles div {
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.circles div:first-child {
+  margin-left: 0;
+}
+.circles div:last-child {
+  margin-right: 0;
+}
+
+.spac-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.check input {
+  width: 60px;
+  height: 60px;
+}
+@media only screen and (max-width: 767px) {
+  .check input {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 559px) {
+  .right {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.sectiontwo {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+span {
+  font-size: 32px;
+  color: white;
+}
+@media only screen and (max-width: 1439px) {
+  span {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  span {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  span {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920;
+  margin: 0 auto;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+.copyright {
+  margin-top: -110px;
+}
+@media only screen and (max-width: 559px) {
+  .copyright {
+    margin-top: 0;
+    padding: 15px;
+  }
+}
+.copyright span {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1439px) {
+  .copyright span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .copyright span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .copyright span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .copyright span {
+    font-size: 14px;
+  }
+}
