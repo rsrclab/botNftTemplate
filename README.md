@@ -1,0 +1,2 @@
+# botNftTemplate
+botNftTemplate
