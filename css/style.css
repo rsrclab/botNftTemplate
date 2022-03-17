@@ -343,7 +343,6 @@ span {
 @media only screen and (max-width: 559px) {
   .copyright {
     margin-top: 0;
-    padding: 15px;
   }
 }
 .copyright span {
@@ -553,6 +552,18 @@ span {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+.footer-wrapper .copyright {
+  position: relative;
+}
+.footer-wrapper .copyright::after {
+  content: "TM";
+  font-family: inherit;
+  font-size: inherit;
+  position: absolute;
+  color: white;
+  right: -1;
+  top: -10px;
 }
 @media only screen and (max-width: 767px) {
   .footer-wrapper {

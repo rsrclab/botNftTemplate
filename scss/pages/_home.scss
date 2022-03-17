@@ -179,7 +179,6 @@ span{
   }
   @include mq('phablet', max) {
     margin-top: 0;
-    padding: 15px;
   }
 
   span{

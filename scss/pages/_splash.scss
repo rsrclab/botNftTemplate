@@ -131,6 +131,16 @@
     align-items: center;
     width: 100%;
     .copyright{
+      position: relative;
+      &::after{
+        content: 'TM';
+        font-family: inherit;
+        font-size: inherit;
+        position: absolute;
+        color: white;
+        right: -1;
+        top:-10px;
+      }
     }
     .socials{
     }
