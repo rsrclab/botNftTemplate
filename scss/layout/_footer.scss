@@ -3,3 +3,62 @@
 // -----------------------------------------------------------------------------
 
 // Footer styles
+.copyright{
+  span{
+    font-size: 30px;
+    @include mq('desktop-wide', max) {
+      font-size: 20px;
+    }
+    @include mq('desktop-small', max) {
+      font-size: 18px;
+    }
+    @include mq('tablet-wide', max) {
+      font-size: 16px;
+    }
+    @include mq('tablet', max) {
+      font-size: 14px;
+    }
+  
+  }
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  display: block;
+  max-width: 1920px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, 0);
+
+  &-wrapper{
+    box-sizing: border-box;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    .copyright{
+      position: relative;
+      &::after{
+        content: 'TM';
+        font-family: inherit;
+        font-size: inherit;
+        position: absolute;
+        color: white;
+        right: -1;
+        top:-10px;
+      }
+    }
+    .socials{
+    }
+    @include mq('tablet', max) {
+      flex-direction: column-reverse;
+    }
+  }
+}

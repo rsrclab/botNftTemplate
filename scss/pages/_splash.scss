@@ -112,50 +112,25 @@
   }
 
 }
-.footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  max-width: 1920px;
-  box-sizing: border-box;
-  justify-content: center;
-  &-wrapper{
-    padding: 25px;
-    box-sizing: border-box;
-    display: flex;  
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    .copyright{
-      position: relative;
-      &::after{
-        content: 'TM';
-        font-family: inherit;
-        font-size: inherit;
-        position: absolute;
-        color: white;
-        right: -1;
-        top:-10px;
-      }
-    }
-    .socials{
-    }
-    @include mq('tablet', max) {
-      flex-direction: column-reverse;
-    }
-  }
-}
+
 .socials{
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   list-style: none;
+  align-items: center ;
   &-item{
     margin: 0;
+    display: flex;
+    align-items: center;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 .spac-items{
@@ -166,9 +141,8 @@
 }
 .fa {
   font-size: 30px;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;

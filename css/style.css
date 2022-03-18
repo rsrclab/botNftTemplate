@@ -91,6 +91,88 @@ p {
   font-family: "TeX Gyre Adventor";
   src: url("../../fonts/texgyreadventor-regular.otf") url("../../fonts/texgyreadventor-italic.otf") url("../../fonts/texgyreadventor-bolditalic.otf") url("../../fonts/texgyreadventor-bold.otf");
 }
+.copyright span {
+  font-size: 30px;
+}
+@media only screen and (max-width: 1439px) {
+  .copyright span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .copyright span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .copyright span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .copyright span {
+    font-size: 14px;
+  }
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  display: block;
+  max-width: 1920px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.footer-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+.footer-wrapper .copyright {
+  position: relative;
+}
+.footer-wrapper .copyright::after {
+  content: "TM";
+  font-family: inherit;
+  font-size: inherit;
+  position: absolute;
+  color: white;
+  right: -1;
+  top: -10px;
+}
+@media only screen and (max-width: 767px) {
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -324,51 +406,6 @@ span {
   }
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1920;
-  margin: 0 auto;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 50px;
-}
-
-.copyright.up {
-  margin-top: -110px;
-}
-@media only screen and (max-width: 559px) {
-  .copyright {
-    margin-top: 0;
-  }
-}
-.copyright span {
-  font-size: 30px;
-}
-@media only screen and (max-width: 1439px) {
-  .copyright span {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 1023px) {
-  .copyright span {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .copyright span {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .copyright span {
-    font-size: 14px;
-  }
-}
-
 .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -520,62 +557,9 @@ span {
   margin-left: 35px;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  max-width: 1920px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.footer-wrapper {
-  padding: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-.footer-wrapper .copyright {
-  position: relative;
-}
-.footer-wrapper .copyright::after {
-  content: "TM";
-  font-family: inherit;
-  font-size: inherit;
-  position: absolute;
-  color: white;
-  right: -1;
-  top: -10px;
-}
-@media only screen and (max-width: 767px) {
-  .footer-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
 .socials {
   padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,9 +568,31 @@ span {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .socials-item {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.socials-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -600,9 +606,8 @@ span {
 
 .fa {
   font-size: 30px;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
